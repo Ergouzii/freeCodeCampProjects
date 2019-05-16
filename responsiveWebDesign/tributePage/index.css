@@ -11,3 +11,12 @@ img {
     height: auto;
     margin: auto;
 }
+#tribute-info {
+    margin-bottom: 30px;
+}
+#tribute-link {
+    color: black;
+}
+#tribute-link:hover {
+    color: blue;
+}
