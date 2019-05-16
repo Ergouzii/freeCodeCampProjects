@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 id="title">A Quick Survey...</h1>
+    <form id="survey-form">
+        <p id="description">Tell me about your coding experiences!</p>
+        <div class="row">
+            <div class="label">
+                <label id="name-label" for="name">*Name</label>
+            </div>
+            <div class="user-input">
+                <input class="input-field" name="name" id="name" placeholder="Enter name here" type="text" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label id="email-label" for="email">*Email</label>
+            </div>
+            <div class="user-input">
+                <input class="input-field" name="email" id="email" placeholder="Enter email here" type="email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label id="number-label" for="experience">*Coding experience (in years)</label>
+            </div>
+            <div class="user-input">
+                <input class="input-field" name="experience" id="number" placeholder="Enter a number here" type="number" min="0" max="100"
+                    required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Occupation</div>
+            <div class=user-input">
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">To what extend do you enjoy coding?</div>
+            <div class="user-input">
+                <label><input name="radios" type="radio" value="0">Not at all</label>
+                <label><input name="radios" type="radio" value="1">Medium</label>
+                <label><input name="radios" type="radio" value="2">Very much</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Which of these programming languages do you like?</div>
+            <div class="user-input">
+                <label><input type="checkbox" value="java">Java</label>
+                <label><input type="checkbox" value="python">Python</label>
+                <label><input type="checkbox" value="C">C/C++</label>
+                <label><input type="checkbox" value="C#">C#</label>
+                <label><input type="checkbox" value="js">JavaScript</label>
+                <label><input type="checkbox" value="php">PHP</label>
+                <label><input type="checkbox" value="other">Other</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Any additional comments?</div>
+            <div class="user-input">
+                <textarea id="comments" placeholder="Enter comments here"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

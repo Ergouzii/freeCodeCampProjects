@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: "Monaco";
+    line-height: 30px;
+    background-color: rgba(180, 216, 221, 0.692);
+}
+form {
+    background-color: white;
+    margin: 0 auto;
+    width: 35%;
+}
+.input-field {
+    width: 30%;
+    height: auto;
+}
+.row {
+    margin-top: 30px;
+}
+#comments {
+    width: 50%;
+    height: 50px;
+}
+#submit {
+    background-color: #59ace0;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
