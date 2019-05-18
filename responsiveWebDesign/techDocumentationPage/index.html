@@ -1,0 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>JS objects</header>
+  <ul>
+    <a class="nav-link" href="#Object_Basics" rel="internal"><li>Object Basics</li></a>
+    <a class="nav-link" href="#Dot_Notation" rel="internal"><li>Dot Notation</li></a>
+    <a class="nav-link" href="#Bracket_Notation" rel="internal"><li>Bracket Notation</li></a>
+    <a class="nav-link" href="#Setting_Object_Members" rel="internal"><li>Setting Object Members</li></a>
+    <a class="nav-link" href="#What_is_this?" rel="internal"><li>What is this?</li></a>
+    <a class="nav-link" href="#Other_Topics" rel="internal"><li>Other Topics</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section id="Object_Basics" class="main-section">
+    <header>Object Basics</header>
+    <p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods when they are inside objects.) Let's work through an example to understand what they look like.</p>
+    <p>To begin with, make a local copy of our <a href="https://github.com/mdn/learning-area/blob/master/javascript/oojs/introduction/oojs.html">oojs.html</a> file. This contains very little — a <code>script</code> element for us to write our source code into. We'll use this as a basis for exploring basic object syntax. While working with this example you should have your developer tools JavaScript console open and ready to type in some commands.
+    <p>As with many things in JavaScript, creating an object often begins with defining and initializing a variable. Try entering the following line below the JavaScript code that's already in your file, then saving and refreshing:</p>
+    <p><div class="code">var person = {};</div></p>
+  <p>Now open to your browser's JavaScript console, enter <code>person</code> into it, and press <code>Enter/Return</code>. You should get a result similar to one of the below lines:</p>
+    <p><div class="code">object Object<br/>Object { }<br/>{ }</div></p>
+     
+</p>
+  </section>
+  <section id="Dot_Notation" class="main-section">
+    <header>Dot Notation</header>
+    <p>Above, you accessed the object's properties and methods using dot notation. The object name <code>(person)</code> acts as the namespace — it must be entered first to access anything encapsulated inside the object. Next you write a dot, then the item you want to access — this can be the name of a simple property, an item of an array property, or a call to one of the object's methods, for example:</p>
+    <p><div class="code">person.age<br/>person.interests[1]<br/>person.bio()</div></p>
+    <p>It is even possible to make the value of an object member another object. For example, try changing the name member from</p>
+    <p><div class="code">name: ['Bob', 'Smith'],</div></p>
+    <p>to</p>
+    <p><div class="code">name : {<br/>  first: 'Bob',<br/>  last: 'Smith'<br/>},</div></p>
+  </section>
+  <section id="Bracket_Notation" class="main-section">
+    <header>Bracket Notation</header>
+    <p>There is another way to access object properties — using bracket notation. Instead of using these:</p>
+    <p><div class="code">person.age<br/>person.name.first</div></p>
+    <p>You can see</p>
+    <p><div class="code">person['age']<br/>person['name']['first']</div></p>
+    <p>This looks very similar to how you access the items in an array, and it is basically the same thing — instead of using an index number to select an item, you are using the name associated with each member's value. It is no wonder that objects are sometimes called <strong>associative arrays</strong> — they map strings to values in the same way that arrays map numbers to values.</p>
+  </section>
+  <section id="Setting_Object_Members" class="main-section">
+    <header>Setting Object Members</header>
+    <p>So far we've only looked at retrieving (or getting) object members — you can also set (update) the value of object members by simply declaring the member you want to set (using dot or bracket notation), like this:</p>
+    <p><div class="code">person.age = 45;<br/>person['name']['last'] = 'Cratchit';</div></p>
+    <p>Try entering the above lines, and then getting the members again to see how they've changed, like so:</p>
+    <p><div class="code">person.age<br/>person['name']['last']</div></p>
+  </section>
+  <section id="What_is_this?" class="main-section">
+    <header>What is this?</header>
+    <p>You may have noticed something slightly strange in our methods. Look at this one for example:</p>
+    <p><div class="code">greeting: function() {<br/>alert('Hi! I\'m ' + this.name.first + '.');<br/>}</div></p>
+<p>You are probably wondering what "this" is. The <code>this</code> keyword refers to the current object the code is being written inside — so in this case <code>this</code> is equivalent to <code>person</code>. So why not just write person instead? As you'll see in the Object-oriented JavaScript for beginners article, when we start creating constructors and so on, <code>this</code> is very useful — it will always ensure that the correct values are used when a member's context changes (e.g. two different <code>person</code> object instances may have different names, but will want to use their own name when saying their greeting).</p>
+  </section>
+  <section id="Other_Topics" class="main-section">
+    <header>Other Topics</header>
+    <p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object-oriented JavaScript for beginners</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">Object prototypes</a></li>
+        <li><a href="Inheritance in JavaScript">Inheritance in JavaScript</a></li>
+        <li><a href="Working with JSON data">Working with JSON data</a></li>
+        <li><a href="Object building practice">Object building practice</a></li>
+      </ul>
+    </p>
+  </section>
+</main>
+<footer>All above documentation is from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">MDN</a> </footer>

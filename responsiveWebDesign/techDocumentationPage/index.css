@@ -1,0 +1,63 @@
+body {
+    font-family: "Gill Sans";
+    background-color: rgb(255, 221, 121);
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  @media (max-width: 650px) {
+    body {
+      width: 100%;
+    }
+  }
+  #navbar {
+    position: fixed;
+    left: 1%;
+    width: 18%;  
+    border-right: solid;
+    border-bottom: solid;
+  }
+  #navbar ul {
+    list-style: none;
+  }
+  #navbar li {
+    border-bottom: 1px solid;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  header {
+    font-size: 2em;
+    color: rgb(55, 66, 74);
+    border: 2px solid rgb(51, 51, 51);
+    padding: 5px 5px;
+    width: fit-content;
+  }
+  section {
+    margin-bottom: 2em;
+  }
+  .code { /* source: https://stackoverflow.com/questions/4000792/how-can-i-style-code-listings-using-css*/
+    background: rgb(221, 222, 206);
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+  }
+  footer {
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  a:hover {
+    color: orange;
+  }
