@@ -2,4 +2,4 @@ User stories: https://learn.freecodecamp.org/responsive-web-design/responsive-we
 
 Live demo: https://codepen.io/LittleGrayay/pen/LojPRw
 
-NOTE: this project only working on (Codepen)[https://codepen.io/LittleGrayay/pen/LojPRw] since it's lacking some html elements (e.g. !doctype, link, etc.)
+NOTE: this project only working on [Codepen](https://codepen.io/LittleGrayay/pen/LojPRw) since it's lacking some html elements (e.g. !doctype, link, etc.)
