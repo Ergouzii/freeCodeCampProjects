@@ -1,0 +1,94 @@
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'BlinkMacSystemFont';
+    font-size: 20px;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+#header-img {
+    width: 72px;
+    height: 40px;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 48px;
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: black;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+    #header {
+        flex-wrap: wrap;
+    }
+}
+
+#form {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+  width: 200px;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#submit {
+  width: 80px;
+  height: auto;
+  margin: auto;
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+#submit:hover {
+  border: 2px solid blue;
+}
+
+#features {
+  padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#video {
+    margin: auto;
+    width: 80%;
+  height: auto;
+}
+
+#pricing {
+  margin-top: 50px;
+}
