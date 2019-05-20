@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-family: monaco,Consolas,"Lucida Console",monospace;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #e0ebe8;
+}
+#navbar a {
+  color: #008080;
+}
+#navbar li {
+  display: inline-block;
+  margin: 14px 30px;
+}
+#welcome-section a {
+  color: #894D41;
+}
+a:hover{
+  border-bottom: 2px solid black;
+}
+#welcome-section {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 55vh;
+  padding-top: 45vh;
+}
+#welcome-section p {
+  margin-top: 1rem;
+}
+.arrow {
+  position: relative;
+  bottom: -4rem;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+#arrow-img {
+  width: 30px;
+}
+#projects {
+  color: #008080;
+  background-color: #F5F5DC;
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  padding-top: 60px;
+}
+.project-tile {
+  padding: 5px;
+  margin: 60px 60px;
+  border: 2px solid lightblue;
+  width: 30%;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.project-tile:hover {
+  transform: scale(1.03);
+}
+.project-tile a {
+  color: #008080;
+}
+.project-tile a:hover {
+  border-bottom: none;
+}
+.project-tile img {
+  width: 100%;
+  border-bottom: 1px solid lightblue;
+}
+
+.wrap{
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.wrap a:hover {
+  border-bottom: none;
+}
+
+.wrap div{
+    display: inline-block;
+}
+
+.icon{
+  margin: 10px 30px;
+    background-color: slategray;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border-radius: 50% 20% / 10% 40%;;
+    height: 4rem;
+    width: 4rem;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+
+.icon a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.github{
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC40IDMyIDMzIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzIsMTZjMCw4LjgtNy4yLDE2LTE2LDE2QzcuMiwzMiwwLDI0LjgsMCwxNkMwLDcuMiw3LjIsMCwxNiwwQzI0LjgsMCwzMiw3LjIsMzIsMTYgTTIwLDI5YzUuNS0xLjgsOS41LTYuOSw5LjUtMTNjMC03LjUtNi0xMy41LTEzLjUtMTMuNUM4LjUsMi41LDIuNSw4LjUsMi41LDE2YzAsNi4xLDQsMTEuMiw5LjUsMTN2LTIuNWMtMy45LDAuOS00LjgtMS44LTQuOC0xLjhjLTAuNi0xLjYtMS41LTItMS41LTJjLTEuMy0wLjksMC4xLTAuOCwwLjEtMC44YzEuNCwwLjEsMi4xLDEuNCwyLjEsMS40YzEuMywyLjMsMy41LDEuNCw0LjIsMS4xYzAuMi0xLDEtMS4yLDEuMi0xLjNDOS44LDIyLjYsNiwyMS4zLDYsMTUuMmMwLTEuNywwLjYtMy4xLDEuNi00LjJjLTAuMi0wLjQtMC43LTIsMC4yLTQuMmMwLDAsMS4zLTAuNCw0LjMsMS42YzEuMy0wLjMsMi42LTAuNSwzLjktMC41YzEuMywwLDIuNywwLjIsMy45LDAuNWMzLTIsNC4zLTEuNiw0LjMtMS42YzAuOSwyLjIsMC4zLDMuOCwwLjIsNC4yYzEsMS4xLDEuNiwyLjUsMS42LDQuMmMwLDYuMS0zLjgsNy40LTcuMyw3LjhjMC42LDAuNCwxLjMsMS4zLDEuMywyLjhWMjl6Ii8+PC9zdmc+);
+    background-size:60%;
+}
+
+.github:hover{
+    background-color:#6CC644;
+}
+
+.codepen{
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iLTEuMiAtMS4yIDQwIDQwIj48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjkuMiwxNy4xIDkuMiwyMC40IDExLjcsMTguOCAiLz48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjEwLDIyLjMgMTcuOCwyNy41IDE3LjgsMjIuOSAxMy40LDIwICIvPjxwb2x5Z29uIGZpbGw9Im5vbmUiIHBvaW50cz0iMTguOCwxNi40IDE1LjIsMTguOCAxOC44LDIxLjEgMjIuMywxOC44ICIvPjxwb2x5Z29uIGZpbGw9Im5vbmUiIHBvaW50cz0iMTcuOCwxNC43IDE3LjgsMTAgMTAsMTUuMiAxMy40LDE3LjYgIi8+PHBvbHlnb24gZmlsbD0ibm9uZSIgcG9pbnRzPSIyNy42LDE1LjIgMTkuOCwxMCAxOS44LDE0LjcgMjQuMSwxNy42ICIvPjxwb2x5Z29uIGZpbGw9Im5vbmUiIHBvaW50cz0iMTkuOCwyMi45IDE5LjgsMjcuNSAyNy42LDIyLjMgMjQuMSwyMCAiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMTguOCwzLjFjLTguNiwwLTE1LjcsNy0xNS43LDE1LjdjMCw4LjYsNywxNS43LDE1LjcsMTUuN2M4LjYsMCwxNS43LTcsMTUuNy0xNS43QzM0LjQsMTAuMSwyNy40LDMuMSwxOC44LDMuMXogTTMwLjQsMjIuNEMzMC40LDIyLjQsMzAuNCwyMi41LDMwLjQsMjIuNGMwLDAuMSwwLDAuMSwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAtMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDBsLTEwLjYsNy4xYy0wLjIsMC4xLTAuNCwwLjItMC42LDAuMmMtMC4yLDAtMC40LTAuMS0wLjYtMC4yTDcuNiwyMy4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwYzAsMCwwLDAtMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMC0wLjEsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAtMC4xLDAtMC4xdi03LjFjMCwwLDAtMC4xLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLTAuMSwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDBsMTAuNi03LjFjMC4zLTAuMiwwLjgtMC4yLDEuMSwwbDEwLjYsNy4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLjEsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMC4xLDAsMC4xdjcuMUMzMC40LDIyLjMsMzAuNCwyMi40LDMwLjQsMjIuNHoiLz48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjI4LjQsMjAuNCAyOC40LDE3LjEgMjUuOSwxOC44ICIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xOC44LDBDOC40LDAsMCw4LjQsMCwxOC44czguNCwxOC44LDE4LjgsMTguOHMxOC44LTguNCwxOC44LTE4LjhTMjkuMSwwLDE4LjgsMHogTTE4LjgsMzQuNGMtOC42LDAtMTUuNy03LTE1LjctMTUuN2MwLTguNiw3LTE1LjcsMTUuNy0xNS43YzguNiwwLDE1LjcsNywxNS43LDE1LjdDMzQuNCwyNy40LDI3LjQsMzQuNCwxOC44LDM0LjR6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTMwLjQsMTUuMUMzMC40LDE1LjEsMzAuNCwxNS4xLDMwLjQsMTUuMWMwLTAuMSwwLTAuMSwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAtMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDBMMTkuMyw3LjNjLTAuMy0wLjItMC44LTAuMi0xLjEsMEw3LjYsMTQuNGMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMGMwLDAsMCwwLTAuMSwwYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMC4xLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAuMSwwLDAuMXY3LjFjMCwwLDAsMC4xLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAuMSwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDBsMTAuNiw3LjFjMC4yLDAuMSwwLjQsMC4yLDAuNiwwLjJjMC4yLDAsMC40LTAuMSwwLjYtMC4ybDEwLjYtNy4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC4xLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMCwwLDAtMC4xYzAsMCwwLDAsMCwwYzAsMCwwLDAsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLTAuMWMwLDAsMCwwLDAsMGMwLDAsMC0wLjEsMC0wLjFjMCwwLDAsMCwwLDBjMCwwLDAtMC4xLDAtMC4xdi03LjFDMzAuNCwxNS4yLDMwLjQsMTUuMSwzMC40LDE1LjF6IE0xOS44LDEwbDcuOCw1LjJsLTMuNSwyLjNsLTQuMy0yLjlWMTB6IE0xNy44LDEwdjQuN2wtNC4zLDIuOUwxMCwxNS4yTDE3LjgsMTB6IE05LjIsMTcuMWwyLjUsMS43bC0yLjUsMS43VjE3LjF6IE0xNy44LDI3LjVMMTAsMjIuM2wzLjUtMi4zbDQuMywyLjlWMjcuNXogTTE4LjgsMjEuMWwtMy41LTIuNGwzLjUtMi40bDMuNSwyLjRMMTguOCwyMS4xeiBNMTkuOCwyNy41di00LjdsNC4zLTIuOWwzLjUsMi4zTDE5LjgsMjcuNXogTTI4LjQsMjAuNGwtMi41LTEuN2wyLjUtMS43VjIwLjR6Ii8+PC9zdmc+);
+    background-size:70%;
+}
+
+.codepen:hover{
+    background-color:#76DAFF;
+}
+
+#contact {
+  background-color: #FFFACD;
+  padding-top: 40px;
+  color: #808000;
+  padding-bottom: 20px;
+}
+
+#contact h2{
+  margin-bottom: 40px;
+}
+
+#contact input {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+#comment {
+  height: 3rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.input-btn {
+ color: white;
+ cursor: pointer;
+ width: auto;
+ border: none;
+ margin: 0;
+ padding: 10px 15px;
+ background: #66CDAA;
+ box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.15);
+}
+
+@media only screen and (max-width: 650px) {
+  nav ul {
+    text-align: center;
+  }
+  #navbar li {
+  margin: 12px 20px;
+  }
+  .project-tile {
+    width: 70%;
+    margin: 40px 0;
+  }
+}
