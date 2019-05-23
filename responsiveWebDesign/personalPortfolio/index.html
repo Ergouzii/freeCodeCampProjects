@@ -1,4 +1,7 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 <nav>
   <ul id="navbar">
     <li><a href="#welcome-section">About</a><li>
@@ -7,7 +10,7 @@
 </nav>
 <div id="welcome-section">
   <h1>Hey I'm Xiaohui Liu.</h1>
-  <p>a student at the <a href="https://www.ualberta.ca/">University of Alberta<a></p>
+  <p>a front-end newbie</p>
   <div class="arrow bounce">
     <a href="#projects">
       <img id="arrow-img" src="http://freevector.co/wp-content/uploads/2013/07/36677-sketched-down-arrow.png">
@@ -51,13 +54,13 @@
 <div id="contact">
   <h2>Contact me</h2>
   <form action="mailto:jayliu925@gmail.com" method="post" enctype="text/plain">
-  Name:
+    <i class="fa fa-address-book"></i> Name:
   <input type="text" name="name">
-  Email:
-  <input type="text" name="mail">
-  Leava a message:
-  <textarea id="comment"></textarea>
-  <input class="input-btn" type="submit" value="Send">
-  <input class="input-btn" type="reset" value="Reset">
+    <i class="fa fa-envelope"></i> Email:
+  <input type="email" name="mail">
+    <i class="fa fa-comment-dots"></i> Leava a message:
+  <textarea id="message" name="message"></textarea>
+  <button id="submit" class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i> Submit</button>
+  <button id="reset" class="btn btn-danger" type="reset"><i class="fa fa-trash-alt"></i> Reset</button>
   </form>
 </div>
