@@ -1,0 +1,3 @@
+User stories: https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine
+
+Technologies/tools used: SCSS, ...

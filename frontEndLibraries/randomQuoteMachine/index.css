@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+body {
+  font-weight: 400;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quote-box {
+  padding: 10px 20px;
+  width: 50rem;
+}
+#quote-box .quote {
+  font-family: "Abril Fatface", cursive;
+  font-size: 25px;
+}
+#quote-box #text {
+  margin-bottom: 1rem;
+}
+#quote-box #author {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=index.css.map */
