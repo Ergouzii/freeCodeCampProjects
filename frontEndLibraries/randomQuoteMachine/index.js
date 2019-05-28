@@ -19,6 +19,20 @@ $("#new-quote").click(renderNewQuote)
 function renderNewQuote() {
     randQuote = getRandQuote()
     $("#text").html(randQuote)
+
+    /* randomize color background */
+    var color = Math.floor(Math.random() * colors.length);
+    $("body").animate({
+            backgroundColor: colors[color],
+            color: colors[color]
+        },
+        1000
+    );
+    $("button").animate({
+            backgroundColor: colors[color]
+        },
+        1000
+    );
 }
 
 function getRandQuote() {
