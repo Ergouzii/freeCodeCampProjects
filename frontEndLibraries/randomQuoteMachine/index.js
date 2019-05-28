@@ -24,21 +24,18 @@ function renderNewQuote() {
 
     /* randomize color background */
     var color = Math.floor(Math.random() * colors.length);
-    $("body").css("background-color", colors[color])
-    $("button").css("background-color", colors[color])
-    $(".quote").css("color", colors[color])
-    /* TODO: animation not working
-    $("body").animate({
-            backgroundColor: colors[color],
-            color: colors[color]
-        },
-        1000
-    );
-    $("button").animate({
-            backgroundColor: colors[color]
-        },
-        1000
-    ); */
+    $("body").css({
+        "background-color": colors[color],
+        "transition": "background-color ease-in 1s"
+    })
+    $("button").css({
+        "background-color": colors[color],
+        "transition": "background-color ease-in 1s"
+    })
+    $(".quote").css({
+        "color": colors[color],
+        "transition": "color ease-in 1s"
+    })
 }
 
 function getRandQuote() {
