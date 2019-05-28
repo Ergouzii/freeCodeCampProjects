@@ -3,7 +3,9 @@ var colors = ['#16a085', '#27ae60',
     '#e74c3c', '#9b59b6',
     '#FB6964', '#342224',
     "#472E32", "#BDBB99",
-    "#77B1A9", "#73A857"
+    "#77B1A9", "#73A857",
+    "#cfad87", "#cfad87",
+    "#5cc9f5", "#dfebd0"
 ];
 
 var quotes = [
@@ -22,6 +24,10 @@ function renderNewQuote() {
 
     /* randomize color background */
     var color = Math.floor(Math.random() * colors.length);
+    $("body").css("background-color", colors[color])
+    $("button").css("background-color", colors[color])
+    $(".quote").css("color", colors[color])
+    /* TODO: animation not working
     $("body").animate({
             backgroundColor: colors[color],
             color: colors[color]
@@ -32,7 +38,7 @@ function renderNewQuote() {
             backgroundColor: colors[color]
         },
         1000
-    );
+    ); */
 }
 
 function getRandQuote() {

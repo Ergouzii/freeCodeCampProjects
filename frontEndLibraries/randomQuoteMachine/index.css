@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
 body {
-  background-color: #333;
+  background-color: #cfad87;
   font-weight: 400;
   height: 100vh;
   display: flex;
@@ -18,13 +18,13 @@ body {
 #quote-box .quote {
   font-family: "Abril Fatface", cursive;
 }
-#quote-box #text {
+#quote-box .quote #text {
   margin-bottom: 1rem;
-  font-size: 35px;
+  font-size: 2rem;
 }
-#quote-box #author {
+#quote-box .quote #author {
   margin-bottom: 2rem;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 #quote-box button {
   color: white;
@@ -32,10 +32,16 @@ body {
 }
 
 footer {
-  color: #a7bbc6;
+  color: white;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
