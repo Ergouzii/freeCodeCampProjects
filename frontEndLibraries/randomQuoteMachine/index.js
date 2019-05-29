@@ -19,9 +19,7 @@ var quotes = [
 $("#new-quote").click(renderNewQuote)
 
 function renderNewQuote() {
-    randQuote = getRandQuote()
-    $("#text").html(randQuote)
-
+    
     /* randomize color background */
     var color = Math.floor(Math.random() * colors.length);
     $("body").css({
@@ -36,6 +34,9 @@ function renderNewQuote() {
         "color": colors[color],
         "transition": "color ease-in 1s"
     })
+
+    randQuote = getRandQuote()
+    $("#text").html(randQuote)
 }
 
 function getRandQuote() {
