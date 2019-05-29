@@ -35,8 +35,14 @@ function renderNewQuote() {
         "transition": "color ease-in 1s"
     })
 
+    /* fade out & fade in the random quote*/
     randQuote = getRandQuote()
-    $("#text").html(randQuote)
+    $("#text").fadeOut(1000, () => { 
+        $("#text").hide(); 
+    });
+    $("#text").fadeIn(0, () => {
+        $("#text").html(randQuote);
+    });
 }
 
 function getRandQuote() {
