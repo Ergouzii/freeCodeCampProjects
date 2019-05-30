@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
-$init-color: #cfad87;
+$main-color: #cfad87;
 
 body {
-    background-color: $init-color;
+    background-color: $main-color;
     font-weight: 400;
     height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@ body {
     padding: 10px 20px;
     width: 50rem;
     border-radius: 10px;
-    color: $init-color;
+    color: $main-color;
 
     .quote {
         font-family: 'Abril Fatface', cursive;
@@ -33,7 +33,7 @@ body {
 
     button {
         color: white;
-        background-color: $init-color;
+        background-color: $main-color;
     }
 
     button:hover {

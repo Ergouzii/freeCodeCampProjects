@@ -1,4 +1,4 @@
-var colors = ['#16a085', '#27ae60',
+const colors = ['#16a085', '#27ae60',
     '#2c3e50', '#f39c12',
     '#e74c3c', '#9b59b6',
     '#FB6964', '#342224',
@@ -8,23 +8,25 @@ var colors = ['#16a085', '#27ae60',
     "#5cc9f5", "#dfebd0"
 ];
 
-var quotes = [
-    "11111",
-    "22222",
-    "33333",
-    "44444"
-]
-
-/* Generating new quote */
-$("#new-quote").click(renderNewQuote)
-
 function renderNewQuote() {
-    
+
+    /* randomly get quote & author, then render them */
+    $.getJSON('https://quota.glitch.me/random', (data) => {
+        quote = data.quoteText
+        author = "- " + data.quoteAuthor
+        textFadeEffect("#text", quote)
+        textFadeEffect("#author", author)
+    })
+
     /* randomize color background */
     var color = Math.floor(Math.random() * colors.length);
     $("body").css({
         "background-color": colors[color],
         "transition": "background-color ease-in 1s"
+    })
+    $("#title").css({
+        "color": colors[color],
+        "transition": "color ease-in 1s"
     })
     $("button").css({
         "background-color": colors[color],
@@ -34,19 +36,21 @@ function renderNewQuote() {
         "color": colors[color],
         "transition": "color ease-in 1s"
     })
+}
 
-    /* fade out & fade in the random quote*/
-    randQuote = getRandQuote()
-    $("#text").fadeOut(1000, () => { 
-        $("#text").hide(); 
+/* fade out & fade in a  text */
+function textFadeEffect(id, newText) {
+    $(id).fadeOut(1000, () => {
+        $(id).hide();
     });
-    $("#text").fadeIn(0, () => {
-        $("#text").html(randQuote);
+    $(id).fadeIn(0, () => {
+        $(id).html(newText);
     });
 }
 
-function getRandQuote() {
-    randIndex = Math.floor(Math.random() * quotes.length)
-    randQuote = quotes[randIndex]
-    return randQuote
-}
+$(document).ready(function () {
+    //TODO: 1. random quote at start. 2. twitter sharing
+
+    /* Generating new quote */
+    $("#new-quote").click(renderNewQuote)
+})
