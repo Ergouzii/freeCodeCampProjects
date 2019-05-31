@@ -35,9 +35,14 @@ body {
         color: white;
         background-color: $main-color;
     }
+  
+    #tweet-quote {
+        color: white;
+        background-color: $main-color;
+    }
 
     button:hover {
-        box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 8px 3px rgba(0,0,0,0.15);
     }
 }
 

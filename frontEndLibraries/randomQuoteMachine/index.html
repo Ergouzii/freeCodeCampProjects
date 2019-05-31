@@ -3,13 +3,16 @@
 
 <head>
     <!-- font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <title>RandomQuoteMachine</title>
 </head>
 
@@ -17,11 +20,13 @@
     <div id="quote-box" class="card">
         <div class="card-body">
             <div class="quote">
-                <div id="text" class="text-center">Click "New Quote"!</div>
-                <div id="author" class="text-right">- Xiaohui Liu</div>
+                <div id="text" class="text-center"></div>
+                <div id="author" class="text-right"></div>
             </div>
             <button id="new-quote" type="button" class="btn">New Quote</button>
-            <button id="tweet-quote" type="button" class="btn float-right"><i class="fab fa-twitter"></i></button>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet" class="btn float-right" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+
         </div>
     </div>
     <footer id="info">
