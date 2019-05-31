@@ -1,5 +1,5 @@
-User stories: https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine
+Live demo: https://codepen.io/LittleGrayay/pen/NVzqdB
 
 Technologies/tools used: SCSS, jQuery, Bootstrap, ...
 
-Thanks to https://quota.glitch.me/random, this is where the quotes are from.
+Thanks to [Quota - the Random quote API](https://github.com/lukePeavey/quota), this is where my quotes are from.
